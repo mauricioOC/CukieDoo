@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/CukieDoo.jpg">
+    <link rel="stylesheet" href="css/home.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> 
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ngl3nfq.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Style+Script&display=swap" rel="stylesheet">
+    <title>CukieDoo</title>
+
+
+    <script>
+      window.onload = function() {
+          document.getElementById('foto').onchange = function(e) {
+              n = e.target.value;
+              var archivo = "url('img/img" + n + ".jpg')";
+              console.log(archivo);
+              document.getElementById("resultado").style.backgroundImage = archivo;
+          }
+      }
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+    
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .resultado {
+          
+    
+    display: block;     
+    min-width:500px;
+    min-height: 500px;    
+    background-repeat: no-repeat;
+    background-position: center;
+      
+    
+    
+  }
+
+   
+
+div.container {
+  padding: 10px;
+}
+
+
+.formato1 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.formato2 {
+    font-size: 20px;
+    text-align: left;
+}
+
+select {
+    color: rgb(76, 0, 255);
+    background-color: #95e1d3;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 8px 10px;
+}
+
+option {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    color: rgb(76, 0, 255);
+}
+</style>
+</head>
+<nav class="nav">
+	<div class="container">
+		<div class="logo">
+			<a href="#" style="font-size: 30px;"><i class="fa fa-heart" aria-hidden="true"></i> cukiedoo.com</a>
+		</div>
+		<div id="mainListDiv" class="main_list">
+			<ul class="navlinks">
+				<li><a href="#">Descargas Digitales</a></li><li><span class="division">|</span></li>
+				<li><a href="#">Contáctenos</a></li><li><span class="division">|</span></li>
+				<li><a href="#">Galería</a></li><li><span class="division">|</span></li>
+				<li><a href="#">Blog</a></li><li><span class="division">|</span></li>
+        <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+			</ul>
+		</div>
+		<span class="navTrigger">
+			<i></i>
+			<i></i>
+			<i></i>
+		</span>
+	</div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body>
+  <section class="container" style="
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  ">    
+    <a class="navbar-brand"><img class="imgLogoCukie" src="https://res.cloudinary.com/code21/image/upload/v1620006001/CookieDoo_vlrevi.jpg" alt="LogoCookie" style="width:140px"></a>
+    
+    <div class="espacio animacion1">
+      <a href="https://www.facebook.com/cukiedoo" target="blank">
+          <i class="fab fa-facebook fa-2x" style="color: rgb(76, 0, 255,0.6)"></i>
+      </a>
+    </div>
+    <div class="espacio animacion1">
+      <a href="https://www.instagram.com/aolab_cr/" target="blank">
+          <i class="fab fa-instagram-square fa-2x" style="color: rgb(76, 0, 255,0.6)"></i>
+      </a>
+   </div>
+   
+    <form class="form-inline">
+      
+      <input class="form-control mr-sm-3" type="search" placeholder="Buscar cortadores" aria-label="Search">
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+         </form>
+  </nav>
+    </section>
+    <hr>
+      
+    
+    <section class="container">
+
+        <hr>
+        <h1 class="text-center display-6 banner1"><i class="fas fa-shipping-fast fa-1x icono"></i>Entrega rápida<i class="fas fa-cookie fa-1x icono"></i>Diseño personalizado<i class="fas fa-cookie-bite fa-1x icono"></i>Miles de diseños<i class="fas fa-shopping-cart fa-1x icono"></i>Compra Online</h1>
+                      <hr>
+
+
+  <div class="row">
+  <div class="col-4" style="max-width:500px">            
+
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628393199/6d11dfed-a797-4c12-a721-ce52dda70107_1_gj05rd.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628393331/08d2ce51-461e-47ff-9787-52782a744fc4_jcnulb.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628396477/45588509-35cb-48a9-b887-52c10587d0bb_nj6e9y.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628396470/d7b820b6-f725-4692-b1c2-d32a95aa0ec0_arcdsf.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628396118/bdb7c2b6-8fb1-4e9f-8bb5-4944afd47b59_ji24mw.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628197313/WhatsApp_Image_2021-08-05_at_18.53.07_rziwc0.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628396124/dceec155-4c81-4978-81ae-cda5aa31ee8d_zatfte.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628395540/101_mzfanr.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628200859/WhatsApp_Image_2021-08-05_at_18.53.41_2_p74u1u.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628200852/WhatsApp_Image_2021-08-05_at_18.53.41_1_nfw0xz.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628197367/WhatsApp_Image_2021-08-05_at_18.53.10_bn3zzk.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/code21/image/upload/v1628197456/WhatsApp_Image_2021-08-05_at_18.53.11_jyyriy.jpg" style="width:100%">
+
+  <div class="pt-3"></div>
+
+  <h1 class="text-center display-6 banner1 pie">Visita nuestra Galería</h1>
+  
+  <div class="pt-3"></div> 
+  
+  <img class="mySlides2" src="https://res.cloudinary.com/code21/image/upload/v1628469536/11ea14c4-72d5-454b-ae3d-50297feebf12_stdcir.jpg" style="width:100%">
+  <br>
+<hr>
+<br>
+
+<p id="descripcion" style="font-size: 24px; font-family: 'Architects Daughter'; padding: 10px;" class="text-center">
+</p>
+  
+   
+
+</div>
+
+<div class="col-8">
+  
+  <h1 class="display-5 text-info formato7">COOKIE CUTTERS & STENCILS FOR ALL OCCASIONS & SEASONS</h1>
+  <div class="row container">
+      <div class="d-flex align-items-center">
+          <p class="text-left pt-5 formato7">
+            Cukie Doo is a 3D printed cookie cutter business that strives to offer the highest quality products on the market. Our cookie cutters are not only hand illustrated, but they have a uniquely shaped comfort grip handle, sturdy walls, and a sharp cutting edge. We also offer a printed label on our hand-lettered cookie cutters that identify the shape and design.
+          </p>
+      </div>
+      <div class="container text-left">
+              <h1 class="display-5 text-info formato7">Uniquely Shaped, Hand Illustrated, 3D Printed Cookie Cutters</h1>
+        <div class="row container" style="align-items: flex-end;">
+            <div class="d-flex align-items-center">
+                <p class="text-left pt-5 formato7">
+                 Here at CukieDoo we are known for our inventiveness, quality, customer service and quick processing times. Please check our customer's last orders:
+                </p>
+            </div>
+            <div class="container text-center">            
+
+            <div>
+              
+              <select id="foto">
+                <option value="0">Selecciona por categoría: </option>  
+                <option value="1">Feliz día Mamá</option> 
+                <option value="2">Corazones</option> 
+                <option value="3">Dinosaurios</option> 
+                <option value="4">Formas / Basics</option> 
+                <option value="5">Insectos</option> 
+                <option value="6">Huellas</option> 
+                <option value="7">Texturas / Nombres</option> 
+                <option value="8">Música</option> 
+                <option value="9">Ángeles</option> 
+                <option value="10">Vehículos</option> 
+                <option value="11">RompeCabezas</option> 
+                <option value="12">Marcadores</option> 
+                <option value="13">Deportes</option> 
+                <option value="14">Deportes</option> 
+                <option value="15">Religiosos </option> 
+                <option value="16">Virgencita </option> 
+                
+                </select>
+
+                <div class="pt-3"></div>
+
+
+                <div id="resultado" class="resultado" style="justify-content: center;"> </div>
+                
+                
+                
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+  </div>
+
+</div>
+
+</div>
+
+<script>
+    
+  let seleccionar = document.querySelector('select');
+  seleccionar.addEventListener('change', elegir);
+
+  function elegir() {
+      let eleccion = seleccionar.value;
+      if (eleccion == 0) {
+          descripcion.innerHTML = '';
+      }
+      if (eleccion == 1) {
+          descripcion.innerHTML = 'Tus diseños a la medida, para celebrarle a Mamá. Marcadores y Cortadores - Ordena ya!';          
+          return;
+      } else if (eleccion == '2') {
+          descripcion.innerHTML = 'Gran variedad de diseños de Corazones. Déjanos saber las médidas';
+          return;
+      } else if (eleccion == '3') {
+          descripcion.innerHTML = 'Muy amplia Biblioteca de Dinosaurios, ve a Galería, o cotiza tu diseño personalizado';
+          return;
+      } else if (eleccion == '4') {
+          descripcion.innerHTML = 'Formas básicas - Formas personalizadas según tus requerimientos - Visita nuestra';
+          return;
+      } else if (eleccion == '5') {
+          descripcion.innerHTML = 'Amplia variedad de animales e insectos - Marcadores y Cortadores';
+          return;
+      } else if (eleccion == '6') {
+          descripcion.innerHTML = 'Huellas de animales - humanos o texturas varias ';
+          return;
+      } else if (eleccion == '7') {
+          descripcion.innerHTML = 'Texturas - Nombres - Formas Nuevas ';
+          return;
+      } else if (eleccion == '8') {
+          descripcion.innerHTML = 'Amplia variedad de marcadores y cortadores musicales';
+          return;
+      } else if (eleccion == '9') {
+          descripcion.innerHTML = ' Ángelitos y  Reilgiosos varios ';
+          return;
+      } else if (eleccion == '10') {
+          descripcion.innerHTML = 'Amplia variedad de vehículos, carros - motos - barcos - aviones ';
+          return;
+      } else if (eleccion == '11') {
+          descripcion.innerHTML = 'Rompecabezas - piezas individuales o completos';
+          return;
+      } else if (eleccion == '12') {
+          descripcion.innerHTML = 'Marcadores - sobre cualquier catgoría, visita nuestra galería';
+          return;
+      } else if (eleccion == '13') {
+          descripcion.innerHTML = 'Marcadores - sobre cualquier catgoría, visita nuestra galería';
+          return;
+      } else if (eleccion == '14') {
+          descripcion.innerHTML = 'Marcadores - sobre cualquier catgoría, visita nuestra galería';
+          return;
+      } else if (eleccion == '15') {
+          descripcion.innerHTML = 'Marcadores - sobre cualquier catgoría, visita nuestra galería';
+          return;
+      }
+  }
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+          <hr><hr>
+
+            <div class="row"> 
+              <div class="column">
+                <img src="https://res.cloudinary.com/code21/image/upload/v1628197519/WhatsApp_Image_2021-08-05_at_18.53.12_m74o4p.jpg" style="width:100%">
+               
+             
+              </div>
+              <div class="column">
+                <img src="https://res.cloudinary.com/code21/image/upload/v1628197456/WhatsApp_Image_2021-08-05_at_18.53.11_jyyriy.jpg" style="width:100%">
+               
+              </div>  
+              
+              <div class="column">
+                <img src="https://res.cloudinary.com/code21/image/upload/v1628200877/WhatsApp_Image_2021-08-05_at_18.53.41_jvk1bw.jpg" style="width:100%">
+               
+              </div>
+              <div class="column">
+                <img src="https://res.cloudinary.com/code21/image/upload/v1628200859/WhatsApp_Image_2021-08-05_at_18.53.41_2_p74u1u.jpg" style="width:100%">
+              
+              </div>
+            </div>    
+            
+            <hr><hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+   
+    <script src="js/home.js"></script>
+</body>
+</html>
